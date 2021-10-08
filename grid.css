@@ -17,18 +17,19 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 3.5rem;
   letter-spacing: 1px;
 }
 
-.head{
-    margin: auto 10px;
+.head {
+  margin: auto 10px;
 }
 
-.container {
+.grid-wrapper {
   display: grid;
   grid-gap: 3rem;
   grid-row-gap: 3.5rem;
-  margin: 3% 20% auto 20%;
+  margin: 3% 20% 2% 20%;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -55,6 +56,10 @@ body {
   text-align: center;
 }
 
+.odd {
+  display: none;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -64,6 +69,7 @@ footer {
 
 footer p {
   margin: 4rem auto 1rem auto;
+  font-size: 1.1rem;
 }
 
 .ui {
@@ -80,10 +86,11 @@ footer p {
 @media only screen and (max-width: 1030px) {
   .heading {
     margin-top: 4rem;
+    margin-bottom: 7rem;
   }
-  .container {
+  .grig-wrapper {
     grid-template-columns: 1fr 1fr;
-    margin: 8% 18% auto 20%;
+    margin: 8% 18% 9% 20%;
   }
 
   footer p {
@@ -92,46 +99,53 @@ footer p {
 }
 
 @media only screen and (max-width: 770px) {
-  .container {
+  .grid-wrapper {
     grid-template-columns: 1fr 1fr;
-    margin: 12% 18% auto 20%;
+    margin: 12% 18% 5% 20%;
+  }
+
+  .odd {
+    display: inherit;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .container {
+  .grid-wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .heading {
+    margin: 1.5rem auto 2rem auto;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .container {
+  .grid-wrapper {
     grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 415px) {
-    .heading{
-        font-size: 1.4rem;
-    }
+  .heading {
+    font-size: 1.4rem;
   }
+}
 
 @media only screen and (max-width: 380px) {
-  .heading{
-      font-size: 1.2rem;
+  .heading {
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 325px) {
-  .heading{
-      font-size: 1rem;
-      margin-bottom: 3rem;
+  .heading {
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 285px) {
-  .heading{
-      font-size: .93rem;
-
+  .heading {
+    font-size: 0.93rem;
   }
 }
