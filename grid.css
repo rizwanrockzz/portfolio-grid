@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Caveat:wght@400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Blaka+Hollow&family=Caveat:wght@400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Permanent+Marker&display=swap");
 
 * {
   padding: 0;
@@ -9,6 +10,7 @@
 
 body {
   font-family: "Roboto Mono", monospace;
+  position: relative;
 }
 
 /* width */
@@ -28,16 +30,29 @@ body {
   border-radius: 10px;
 }
 
-.heading {
-  text-transform: uppercase;
+nav {
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to left, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to left, #ff0080, #ff8c00, #40e0d0);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 1.5rem 0 4rem;
-  letter-spacing: 1px;
+  /* margin: 10px; */
+  padding: 1rem;
+  margin-bottom: 40px;
 }
 
+.heading {
+  font-family: "Blaka Hollow", cursive;
+  /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Permanent Marker', cursive; */
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
 
 .grid-wrapper {
   display: grid;
@@ -48,7 +63,8 @@ body {
 }
 
 .item {
-  width: 12rem;
+  /* width: 12rem; */
+  width: calc(100% - 50px);
   height: 65px;
   background: #b92b27;
   background: -webkit-linear-gradient(to right, #1565c0, #b92b27);
@@ -60,12 +76,13 @@ body {
   margin-right: auto;
 }
 
-.item:hover{
-  transition: .5s;
+.item:hover {
+  transition: 0.5s;
   background: #b92b27;
   background: -webkit-linear-gradient(to left, #1565c0, #b92b27);
   background: linear-gradient(to left, #1565c0, #b92b27);
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.561) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.629) 0px 30px 60px -30px;
 }
 
 .item a {
@@ -111,20 +128,32 @@ footer p {
   margin: 0 10px;
 }
 
-.rizwan{
+.rizwan {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1030px) {
-  .heading {
-    margin-top: 4rem;
-    margin-bottom: 7rem;
-  }
-  .grig-wrapper {
-    grid-template-columns: 1fr 1fr;
-    /* margin: 8% 18% 9% 20%; */
-  }
+.gradient-img-1,.gradient-img-2,.gradient-img-3 {
+  position: absolute;
+  width: 150px;
+  z-index: -2;
+}
 
+.gradient-img-1{
+  bottom: 10px;
+  right: 10px;
+}
+
+.gradient-img-2{
+  top: 130px;
+  left: 10px;
+}
+
+.gradient-img-3{
+  bottom: 50px;
+  left: 10px;
+}
+
+@media only screen and (max-width: 1030px) {
   footer p {
     margin: 5.5rem auto 1rem auto;
   }
@@ -149,39 +178,30 @@ footer p {
   .grid-wrapper {
     grid-template-columns: 1fr 1fr;
   }
-
-  .heading {
-    margin: 1.5rem auto 2rem auto;
-  }
 }
 
 @media only screen and (max-width: 550px) {
+  /* .item{
+    width: calc(100% - 40px);
+  } */
   .grid-wrapper {
     grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 415px) {
-  .heading {
-    font-size: 1.4rem;
-  }
-}
-
 @media only screen and (max-width: 380px) {
-  .heading {
-    font-size: 1.2rem;
+  .gradient-img-1,.gradient-img-3 {
+    width: 60px;
   }
-}
 
-@media only screen and (max-width: 325px) {
-  .heading {
-    font-size: 1rem;
-    margin-bottom: 3rem;
+  .gradient-img-2 {
+    width: 100px;
   }
-}
+  .gradient-img-2 {
+    top: 250px;
+  }
 
-@media only screen and (max-width: 285px) {
-  .heading {
-    font-size: 0.93rem;
+  .gradient-img-3{
+    bottom: 10px;
   }
 }
