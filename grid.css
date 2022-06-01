@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Caveat:wght@400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -7,18 +8,12 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
-
-/* scrool bar */
 
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
-}
-
-::-webkit-scrollbar:hover {
-  width: 20px;
 }
 
 /* Track */
@@ -33,44 +28,49 @@ body {
   border-radius: 10px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(128, 128, 128, 0.7);
-}
 .heading {
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 3.5rem;
+  margin: 1.5rem 0 4rem;
   letter-spacing: 1px;
 }
 
-.head {
-  margin: auto 10px;
-}
 
 .grid-wrapper {
   display: grid;
   grid-gap: 3rem;
-  grid-row-gap: 3.5rem;
-  margin: 3% 20% 2% 20%;
+  grid-row-gap: 3rem;
+  margin: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .item {
-  height: 70px;
-  background: rgba(128, 128, 128, 0.24);
-  /* margin: 20px; */
+  width: 12rem;
+  height: 65px;
+  background: #b92b27;
+  background: -webkit-linear-gradient(to right, #1565c0, #b92b27);
+  background: linear-gradient(to right, #1565c0, #b92b27);
   padding: 10px;
   border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item:hover{
+  transition: .5s;
+  background: #b92b27;
+  background: -webkit-linear-gradient(to left, #1565c0, #b92b27);
+  background: linear-gradient(to left, #1565c0, #b92b27);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .item a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.1rem;
   text-transform: capitalize;
   text-align: center;
@@ -108,6 +108,11 @@ footer p {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 0 10px;
+}
+
+.rizwan{
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1030px) {
@@ -117,7 +122,7 @@ footer p {
   }
   .grig-wrapper {
     grid-template-columns: 1fr 1fr;
-    margin: 8% 18% 9% 20%;
+    /* margin: 8% 18% 9% 20%; */
   }
 
   footer p {
@@ -125,10 +130,14 @@ footer p {
   }
 }
 
+.fa-heart {
+  color: red;
+}
+
 @media only screen and (max-width: 770px) {
   .grid-wrapper {
     grid-template-columns: 1fr 1fr;
-    margin: 12% 18% 5% 20%;
+    /* margin: 12% 18% 5% 20%; */
   }
 
   .odd {
