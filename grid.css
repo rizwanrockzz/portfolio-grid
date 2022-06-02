@@ -139,18 +139,18 @@ footer p {
 }
 
 .gradient-img-1{
-  bottom: 10px;
-  right: 10px;
+  bottom: 100px;
+  right: 65px;
 }
 
 .gradient-img-2{
   top: 130px;
-  left: 10px;
+  left: 75px;
 }
 
 .gradient-img-3{
   bottom: 50px;
-  left: 10px;
+  left: 55px;
 }
 
 @media only screen and (max-width: 1030px) {
@@ -189,19 +189,27 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 416px) {
   .gradient-img-1,.gradient-img-3 {
     width: 60px;
   }
 
+  .gradient-img-1{
+    width: 100px;
+    bottom: 59px;
+    right: 20px;
+  }
   .gradient-img-2 {
     width: 100px;
+    left: 30px;
   }
   .gradient-img-2 {
     top: 250px;
   }
 
   .gradient-img-3{
-    bottom: 10px;
+    width: 95px;
+    bottom: 270px;
+    left: 28px;
   }
 }
