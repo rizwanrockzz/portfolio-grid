@@ -85,7 +85,7 @@ nav {
     rgba(0, 0, 0, 0.629) 0px 30px 60px -30px;
 }
 
-.item a {
+.item{
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
