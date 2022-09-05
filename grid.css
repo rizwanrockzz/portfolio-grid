@@ -159,6 +159,29 @@ footer p {
   left: 55px;
 }
 
+.social-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  top: 50vh;
+  left: 25px;
+}
+
+.social-links a i {
+  font-size: 28px;
+}
+
+.fa-brands {
+  background: #ff00cc;
+  background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);
+  background: linear-gradient(to bottom, #333399, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 1030px) {
   footer p {
     margin: 5.5rem auto 1rem auto;
@@ -192,6 +215,15 @@ footer p {
   } */
   .grid-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .social-links a i {
+    font-size: 24px;
+    color: black;
+  }
+
+  .social-links {
+    left: 10px;
   }
 }
 
