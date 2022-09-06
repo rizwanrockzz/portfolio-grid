@@ -40,16 +40,17 @@ nav {
   /* margin: 10px; */
   padding: 1rem;
   /* margin-bottom: 40px; */
-  display: none;/**/
+  display: none;
+  /**/
 }
 
-.hello-text{
+.hello-text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hello-text img{
+.hello-text img {
   width: 50px;
   margin-top: -14px;
 }
@@ -73,6 +74,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .sec-1 {
@@ -96,11 +98,41 @@ nav {
   /* font-size: 4rem; */
 }
 
+.style-hr {
+  height: 10px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background: #8360c3;
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+}
+
 /* portfolio of websites */
+
+.stylish-underline {
+  position: relative;
+  font-weight: 600;
+}
+
+.stylish-underline::after {
+  background-image: url(underline-3.png);
+  background-repeat: no-repeat;
+  background-size: 88% 80%;
+  content: "";
+  display: block;
+  height: 1.2em;
+  left: 0.2em;
+  /* left: -0.2em; */
+  position: absolute;
+  /* top: calc(100% - 0.01rem); */
+  width: calc(100% + 2em);
+  top: 30px;
+}
 
 .portfolio-heading {
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 3rem 2.5rem 3rem;
 }
 
 .grid-wrapper {
@@ -109,7 +141,7 @@ nav {
   grid-row-gap: 3rem;
   margin: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .item {
@@ -201,7 +233,8 @@ footer p {
 }
 
 .gradient-img-2 {
-  display: none; /**/
+  display: none;
+  /**/
   top: 130px;
   left: 75px;
 }
@@ -263,6 +296,7 @@ footer p {
 }
 
 @media only screen and (max-width: 550px) {
+
   /* .item{
     width: calc(100% - 40px);
   } */
@@ -283,7 +317,11 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .intro-section .sec-2 img{
+  .intro-section .sec-1 {
+    align-items: center;
+  }
+
+  .intro-section .sec-2 img {
     width: calc(100% - 80px);
     height: 100%;
     display: block;
@@ -295,6 +333,7 @@ footer p {
 }
 
 @media only screen and (max-width: 416px) {
+
   .gradient-img-1,
   .gradient-img-3 {
     width: 60px;
@@ -305,10 +344,12 @@ footer p {
     bottom: 59px;
     right: 20px;
   }
+
   .gradient-img-2 {
     width: 100px;
     left: 30px;
   }
+
   .gradient-img-2 {
     top: 250px;
   }
