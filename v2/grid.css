@@ -43,6 +43,17 @@ nav {
   display: none;/**/
 }
 
+.hello-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-text img{
+  width: 50px;
+  margin-top: -14px;
+}
+
 .heading {
   font-family: "Blaka Hollow", cursive;
   /* font-family: 'Caveat', cursive; */
